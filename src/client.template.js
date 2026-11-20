@@ -713,6 +713,42 @@ html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-unarchive'] > * {
 }
 
 /* ———— 像素弹窗：输入框 / 发送 / 标签 / 新建会话 / 卡片 ———— */
+/* 状态行底衬：抄 dsh-deep-whale 的做法——在 composer dock 上铺一层独立的
+   ::before 背板（渐变两端淡出、胶囊圆角），不碰卡片本身，也不加全屏层。
+   颜色取 .cl-scene 底部合成色：深色 #11102d，浅色 #e9e2ef。 */
+html[data-dsh-closure-skin] [data-composer-card] + div[class*='dock'] {
+  position: relative;
+  isolation: isolate;
+}
+html[data-dsh-closure-skin] [data-composer-card] + div[class*='dock']::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--cl-dock-bleed-l, 48px));
+  right: calc(-1 * var(--cl-dock-bleed-r, 48px));
+  top: 0;
+  bottom: -2px;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(17, 16, 45, 0.96) 10%,
+    rgba(17, 16, 45, 0.96) 90%,
+    transparent
+  );
+}
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme])
+  [data-composer-card] + div[class*='dock']::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(233, 226, 239, 0.96) 10%,
+    rgba(233, 226, 239, 0.96) 90%,
+    transparent
+  );
+}
+
 html[data-dsh-closure-skin] [data-composer-card] {
   position: relative !important;
   border: 2px solid var(--cl-px-line) !important;
@@ -2775,6 +2811,57 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
       }
     }
 
+    // —— 状态行胶囊：横向对齐输入框卡片，底部不再额外下探 ——
+    function installComposerCapsule() {
+      let frame = 0
+      let timer = 0
+      let lastL = ''
+      let lastR = ''
+
+      function apply() {
+        frame = 0
+        const card = document.querySelector('[data-composer-card]')
+        const dock = card !== null ? card.nextElementSibling : null
+        if (dock === null) return
+        if (!String(dock.className || '').includes('dock')) return
+        const c = card.getBoundingClientRect()
+        const d = dock.getBoundingClientRect()
+        if (c.width < 1 || d.width < 1) return
+        const ls = Math.max(0, Math.round(d.left - c.left)) + 'px'
+        const rs = Math.max(0, Math.round(c.right - d.right)) + 'px'
+        if (ls !== lastL) {
+          lastL = ls
+          dock.style.setProperty('--cl-dock-bleed-l', ls)
+        }
+        if (rs !== lastR) {
+          lastR = rs
+          dock.style.setProperty('--cl-dock-bleed-r', rs)
+        }
+      }
+
+      function schedule() {
+        if (frame !== 0) return
+        frame = window.requestAnimationFrame(apply)
+      }
+
+      window.addEventListener('resize', schedule)
+      timer = window.setInterval(apply, 2000)
+      schedule()
+      window.setTimeout(schedule, 300)
+
+      return () => {
+        if (frame !== 0) window.cancelAnimationFrame(frame)
+        if (timer !== 0) window.clearInterval(timer)
+        window.removeEventListener('resize', schedule)
+        const card = document.querySelector('[data-composer-card]')
+        const dock = card !== null ? card.nextElementSibling : null
+        if (dock !== null) {
+          dock.style.removeProperty('--cl-dock-bleed-l')
+          dock.style.removeProperty('--cl-dock-bleed-r')
+        }
+      }
+    }
+
     return {
       inject: ['slots'],
       apply(ctx) {
@@ -2830,6 +2917,15 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
         } catch (err) {
           permissionGlyphsDispose = null
         }
+
+        // 状态行胶囊：横向按实际布局对齐到输入框卡片
+        let composerCapsuleDispose = null
+        try {
+          composerCapsuleDispose = installComposerCapsule()
+        } catch (err) {
+          composerCapsuleDispose = null
+        }
+
 
         let disposed = false
         let timer = 0
@@ -3045,6 +3141,7 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
           try { if (sceneEl && sceneEl.parentNode) sceneEl.parentNode.removeChild(sceneEl) } catch (err) {}
           try { if (controlsEl && controlsEl.parentNode) controlsEl.parentNode.removeChild(controlsEl) } catch (err) {}
           try { if (permissionGlyphsDispose !== null) permissionGlyphsDispose() } catch (err) {}
+          try { if (composerCapsuleDispose !== null) composerCapsuleDispose() } catch (err) {}
           permissionGlyphsDispose = null
           root.removeAttribute('data-dsh-closure-skin')
           root.removeAttribute('data-dsh-closure-mood')
