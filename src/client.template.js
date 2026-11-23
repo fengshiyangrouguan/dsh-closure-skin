@@ -350,6 +350,74 @@ html[data-dsh-closure-skin][data-cl-scanlines='off']::after {
   display: none;
 }
 
+/* ———— 开机入场：一次性 1.15s，独立覆盖层 ————
+   约束：绝不给 html / body / #root 加 transform / filter / perspective / will-change，
+   否则 fixed 定位的浮层（idle-crt 屏保板、桌宠）会被包含块接管而错位。
+   这里只动覆盖层自己的 opacity 与 clip-path。 */
+.cl-boot {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+  animation: cl-boot-fade 1.15s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+@property --cl-boot-iris {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+.cl-boot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 43%, rgba(12, 10, 28, 0) calc(var(--cl-boot-iris) - 7%), rgba(9, 8, 20, 0.97) var(--cl-boot-iris));
+  animation: cl-boot-iris 1.15s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+.cl-boot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(to bottom, rgba(186, 168, 255, 0.1) 0 2px, transparent 2px 6px),
+    linear-gradient(to bottom, transparent 0%, rgba(160, 140, 255, 0.16) 48%, transparent 52%);
+  clip-path: inset(0 0 100% 0);
+  animation: cl-boot-sweep 0.62s cubic-bezier(0.22, 0.61, 0.36, 1) 0.06s forwards;
+}
+.cl-boot-mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 96px;
+  height: 96px;
+  margin: -48px 0 0 -48px;
+  image-rendering: pixelated;
+  opacity: 0;
+  filter: drop-shadow(0 0 18px rgba(160, 140, 255, 0.55));
+  animation: cl-boot-mark 0.86s ease-out 0.12s forwards;
+}
+@keyframes cl-boot-fade {
+  0%, 72% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes cl-boot-iris {
+  0%, 38% { --cl-boot-iris: 0%; }
+  100% { --cl-boot-iris: 148%; }
+}
+@keyframes cl-boot-sweep {
+  0% { clip-path: inset(0 0 100% 0); }
+  62% { clip-path: inset(0 0 0 0); }
+  100% { clip-path: inset(100% 0 0 0); }
+}
+@keyframes cl-boot-mark {
+  0% { opacity: 0; filter: brightness(2.4) drop-shadow(0 0 18px rgba(160, 140, 255, 0.55)); }
+  45% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cl-boot { display: none !important; }
+}
+
 /* ———— 情绪通道：只调整蓝紫色相与顶层光晕，不做多色霓虹 ———— */
 html[data-dsh-closure-skin][data-dsh-closure-mood='sad'] { --cl-accent: #ff9a3c; }
 html[data-dsh-closure-skin][data-dsh-closure-mood='peak'] { --cl-accent: var(--cl-red); }
@@ -2651,7 +2719,7 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
 
     // ———— 皮肤设置：字体方案 / 中文字体 / 扫描线 ————
     const SETTINGS_KEY = 'dshcl-closure-skin-settings'
-    const DEFAULT_SETTINGS = { font: 'mono', cjk: 'dengxian', scanlines: true }
+    const DEFAULT_SETTINGS = { font: 'mono', cjk: 'dengxian', scanlines: true, boot: true }
 
     function readSkinSettings() {
       try {
@@ -2662,6 +2730,7 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
           font: value && (value.font === 'pixel' || value.font === 'system') ? value.font : 'mono',
           cjk: value && value.cjk === 'yahei' ? 'yahei' : 'dengxian',
           scanlines: !(value && value.scanlines === false),
+          boot: !(value && value.boot === false),
         }
       } catch (err) {
         return { ...DEFAULT_SETTINGS }
@@ -2673,11 +2742,51 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
       root.dataset.clFont = settings.font
       root.dataset.clCjk = settings.cjk
       root.dataset.clScanlines = settings.scanlines ? 'on' : 'off'
+      if (settings.boot === false) clearBoot(document.querySelector('[data-cl-boot]'))
       if (persist) {
         try {
           localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings))
         } catch (err) {}
       }
+    }
+
+    // ———— 开机入场 ————
+    // 每个会话只播一次（sessionStorage），设置里可关，reduced-motion 下直接跳过。
+    const BOOT_KEY = 'dshcl-closure-boot'
+    const BOOT_SPAN_MS = 1180
+
+    function bootAllowed(settings) {
+      if (settings.boot === false) return false
+      try {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false
+      } catch (err) {}
+      try {
+        if (window.sessionStorage.getItem(BOOT_KEY) === '1') return false
+      } catch (err) {}
+      return true
+    }
+
+    function playBoot(settings) {
+      if (!bootAllowed(settings)) return null
+      const layer = document.createElement('div')
+      layer.className = 'cl-boot'
+      layer.setAttribute('data-cl-boot', '')
+      layer.setAttribute('aria-hidden', 'true')
+      const mark = document.createElement('img')
+      mark.className = 'cl-boot-mark'
+      mark.src = LOGO
+      mark.alt = ''
+      mark.draggable = false
+      layer.appendChild(mark)
+      document.body.appendChild(layer)
+      try { window.sessionStorage.setItem(BOOT_KEY, '1') } catch (err) {}
+      return layer
+    }
+
+    function clearBoot(layer) {
+      try {
+        if (layer !== null && layer !== undefined && layer.parentNode) layer.parentNode.removeChild(layer)
+      } catch (err) {}
     }
 
     function ClosureSettingRow(title, description, control) {
@@ -2739,6 +2848,10 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
           ClosureSettingRow('扫描线', 'CRT 扫描线与暗角。', ClosureSwitch({
             checked: state.scanlines,
             onChange: (scanlines) => { update({ scanlines }) },
+          })),
+          ClosureSettingRow('开机入场', '每次会话启动播一次 1.2s 扫描入场。', ClosureSwitch({
+            checked: state.boot,
+            onChange: (boot) => { update({ boot }) },
           }))
         )
       )
@@ -2868,7 +2981,20 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
         const root = document.documentElement
         root.setAttribute('data-dsh-closure-skin', '')
         root.setAttribute('data-dsh-closure-mood', 'normal')
-        applySkinSettings(readSkinSettings(), false)
+        const initialSettings = readSkinSettings()
+        applySkinSettings(initialSettings, false)
+        let bootLayer = null
+        try {
+          bootLayer = playBoot(initialSettings)
+          if (bootLayer !== null) {
+            window.setTimeout(() => {
+              clearBoot(bootLayer)
+              bootLayer = null
+            }, BOOT_SPAN_MS)
+          }
+        } catch (err) {
+          bootLayer = null
+        }
 
         const style = document.createElement('style')
         style.setAttribute('data-plugin', 'dsh-closure-skin')
@@ -3143,6 +3269,7 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
           try { if (permissionGlyphsDispose !== null) permissionGlyphsDispose() } catch (err) {}
           try { if (composerCapsuleDispose !== null) composerCapsuleDispose() } catch (err) {}
           permissionGlyphsDispose = null
+          clearBoot(document.querySelector('[data-cl-boot]'))
           root.removeAttribute('data-dsh-closure-skin')
           root.removeAttribute('data-dsh-closure-mood')
           root.removeAttribute('data-cl-font')
@@ -3152,14 +3279,20 @@ html[data-dsh-closure-skin] :is(textarea, input, [contenteditable]:not([contente
 
         ctx.slots.inject('sidebar.brand.mark', () => ctx.slots.register({
           name: 'sidebar.brand.mark', id: 'closure-brand',
+          // 单槽同优先级只允许一个注册，负数才能盖过官方内置（值最小者渲染）
+          priority: -10,
         }, BrandMark))
 
         ctx.slots.inject('sidebar.brand.name', () => ctx.slots.register({
           name: 'sidebar.brand.name', id: 'closure-brand-name',
+          // 同上：与官方 sidebar.brand.name 同槽，必须用负优先级
+          priority: -10,
         }, BrandName))
 
         ctx.slots.inject('conversation.hero.brand.mark', () => ctx.slots.register({
           name: 'conversation.hero.brand.mark', id: 'closure-hero-logo',
+          // 同上：首屏徽标槽也有官方注册
+          priority: -10,
         }, HeroLogo))
 
         ctx.slots.inject('settings.section', () => ctx.slots.register({
