@@ -156,6 +156,35 @@ html[data-dsh-closure-skin] body[data-ds-dark-theme] {
   --dsw-specific-sidebar-fill: rgba(12, 14, 30, 0.86);
   --dsw-specific-input-major: rgba(18, 20, 42, 0.92);
   --dsw-alias-border-l1: rgba(126, 14, 228, 0.24);
+  /* —— 控件表面：替换宿主默认的灰/橄榄灰 —— */
+  --dsw-alias-bg-layer-3: rgba(26, 29, 64, 0.88);
+  --dsw-alias-bg-module-platform: rgba(20, 22, 48, 0.9);
+  --dsw-alias-bg-multi-select: rgba(24, 26, 56, 0.9);
+  --dsw-alias-card-fill: rgba(22, 24, 52, 0.9);
+  --dsw-alias-card-fill-hover: rgba(30, 32, 68, 0.92);
+  --dsw-alias-card-tile-fill: rgba(255, 255, 255, 0.04);
+  --dsw-specific-selector: rgba(30, 32, 70, 0.92);
+  --dsw-specific-menu: rgba(18, 20, 44, 0.96);
+  --dsw-specific-tip: rgba(20, 22, 48, 0.96);
+  --dsw-alias-menu-group-header-fill: rgba(24, 26, 56, 0.95);
+  --dsw-alias-button-elevated-fill: rgba(34, 36, 78, 0.92);
+  --dsw-alias-button-floating-fill: rgba(28, 30, 64, 0.94);
+  --dsw-alias-button-floating-hover: rgba(40, 42, 90, 0.96);
+  --dsw-alias-button-ghost-active-fill: rgba(126, 14, 228, 0.2);
+  --dsw-alias-button-ghost-active-hover: rgba(126, 14, 228, 0.3);
+  --dsw-alias-button-ghost-active-border: rgba(126, 14, 228, 0.42);
+  --dsw-alias-button-tool-bar-fill: rgba(30, 32, 70, 0.6);
+  --dsw-alias-button-tool-bar-hover: rgba(42, 44, 90, 0.72);
+  --dsw-alias-interactive-bg-hover: rgba(126, 14, 228, 0.12);
+  --dsw-alias-interactive-bg-active: rgba(126, 14, 228, 0.2);
+  --dsw-alias-interactive-bg-hover-accent: rgba(126, 14, 228, 0.2);
+  --dsw-alias-interactive-bg-hover-solid: rgba(36, 38, 82, 0.9);
+  --dsw-alias-border-l2: rgba(126, 14, 228, 0.32);
+  --dsw-alias-border-l3: rgba(126, 14, 228, 0.42);
+  --dsw-alias-switch-thumb: #f4f0ff;
+  --dsw-alias-hovercard-bg: rgba(16, 18, 40, 0.96);
+  --dsw-alias-tooltip-bg: rgba(20, 22, 48, 0.97);
+  --dsw-alias-toast-bg: rgba(24, 26, 56, 0.97);
   --cl-surface-strong: #0d0f20;
   --cl-icon: #ffffff;
   --cl-icon-glow: rgba(255, 255, 255, 0.75);
@@ -170,6 +199,35 @@ html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) {
   --dsw-specific-sidebar-fill: rgba(232, 232, 239, 0.9);
   --dsw-specific-input-major: rgba(255, 255, 255, 0.88);
   --dsw-alias-border-l1: rgba(43, 48, 184, 0.2);
+  /* —— 控件表面：替换宿主默认的灰/橄榄灰 —— */
+  --dsw-alias-bg-layer-3: rgba(238, 233, 250, 0.92);
+  --dsw-alias-bg-module-platform: rgba(246, 242, 252, 0.92);
+  --dsw-alias-bg-multi-select: rgba(244, 240, 252, 0.92);
+  --dsw-alias-card-fill: rgba(255, 255, 255, 0.88);
+  --dsw-alias-card-fill-hover: rgba(255, 255, 255, 0.96);
+  --dsw-alias-card-tile-fill: rgba(255, 255, 255, 0.5);
+  --dsw-specific-selector: rgba(255, 255, 255, 0.9);
+  --dsw-specific-menu: rgba(253, 251, 255, 0.96);
+  --dsw-specific-tip: rgba(255, 255, 255, 0.96);
+  --dsw-alias-menu-group-header-fill: rgba(250, 247, 255, 0.95);
+  --dsw-alias-button-elevated-fill: rgba(255, 255, 255, 0.9);
+  --dsw-alias-button-floating-fill: rgba(255, 255, 255, 0.94);
+  --dsw-alias-button-floating-hover: rgba(250, 246, 255, 0.97);
+  --dsw-alias-button-ghost-active-fill: rgba(126, 14, 228, 0.1);
+  --dsw-alias-button-ghost-active-hover: rgba(126, 14, 228, 0.16);
+  --dsw-alias-button-ghost-active-border: rgba(126, 14, 228, 0.24);
+  --dsw-alias-button-tool-bar-fill: rgba(255, 255, 255, 0.55);
+  --dsw-alias-button-tool-bar-hover: rgba(250, 246, 255, 0.75);
+  --dsw-alias-interactive-bg-hover: rgba(126, 14, 228, 0.07);
+  --dsw-alias-interactive-bg-active: rgba(126, 14, 228, 0.12);
+  --dsw-alias-interactive-bg-hover-accent: rgba(126, 14, 228, 0.12);
+  --dsw-alias-interactive-bg-hover-solid: rgba(244, 240, 252, 0.9);
+  --dsw-alias-border-l2: rgba(43, 48, 184, 0.24);
+  --dsw-alias-border-l3: rgba(43, 48, 184, 0.32);
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-hovercard-bg: rgba(255, 255, 255, 0.97);
+  --dsw-alias-tooltip-bg: rgba(255, 255, 255, 0.98);
+  --dsw-alias-toast-bg: rgba(250, 247, 255, 0.98);
   --cl-surface-strong: #f2f2f6;
   /* 浅色图标用淡紫，避免深紫发黑 */
   --cl-icon: #a678f0;
@@ -252,6 +310,52 @@ html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) select {
 }
 
 html[data-dsh-closure-skin] body {
+
+  /* —— 静态中性色阶：宿主默认是灰/橄榄灰，整族换成蓝紫灰 ——
+     宿主组件大量直接引用 --dsw-static-neutral-*，不换会露出原生绿灰。 */
+  --dsw-static-neutral-00: #f7f5ff;
+  --dsw-static-neutral-50: #f2eefb;
+  --dsw-static-neutral-60: #efebf9;
+  --dsw-static-neutral-75: #e9e3f5;
+  --dsw-static-neutral-100: #e0d8ef;
+  --dsw-static-neutral-150: #d5cbe7;
+  --dsw-static-neutral-200: #c6b9dc;
+  --dsw-static-neutral-250: #b8a9cd;
+  --dsw-static-neutral-300: #a898be;
+  --dsw-static-neutral-400: #8e7ea8;
+  --dsw-static-neutral-500: #756791;
+  --dsw-static-neutral-550: #6a5c84;
+  --dsw-static-neutral-600: #5f5176;
+  --dsw-static-neutral-700: #4d4161;
+  --dsw-static-neutral-750: #443956;
+  --dsw-static-neutral-800: #3b314c;
+  --dsw-static-neutral-850: #332a43;
+  --dsw-static-neutral-875: #2f263e;
+  --dsw-static-neutral-900: #2a2238;
+  --dsw-static-neutral-950: #1e1929;
+  --dsw-static-neutral-1000: #120e1b;
+  --dsw-static-neutral-bluish-00: var(--dsw-static-neutral-00);
+  --dsw-static-neutral-bluish-50: var(--dsw-static-neutral-50);
+  --dsw-static-neutral-bluish-55: var(--dsw-static-neutral-50);
+  --dsw-static-neutral-bluish-60: var(--dsw-static-neutral-60);
+  --dsw-static-neutral-bluish-75: var(--dsw-static-neutral-75);
+  --dsw-static-neutral-bluish-90: var(--dsw-static-neutral-75);
+  --dsw-static-neutral-bluish-100: var(--dsw-static-neutral-100);
+  --dsw-static-neutral-bluish-150: var(--dsw-static-neutral-150);
+  --dsw-static-neutral-bluish-200: var(--dsw-static-neutral-200);
+  --dsw-static-neutral-bluish-300: var(--dsw-static-neutral-300);
+  --dsw-static-neutral-bluish-310: var(--dsw-static-neutral-300);
+  --dsw-static-neutral-bluish-400: var(--dsw-static-neutral-400);
+  --dsw-static-neutral-bluish-500: var(--dsw-static-neutral-500);
+  --dsw-static-neutral-bluish-600: var(--dsw-static-neutral-600);
+  --dsw-static-neutral-bluish-700: var(--dsw-static-neutral-700);
+  --dsw-static-neutral-bluish-750: var(--dsw-static-neutral-750);
+  --dsw-static-neutral-bluish-800: var(--dsw-static-neutral-800);
+  --dsw-static-neutral-bluish-850: var(--dsw-static-neutral-850);
+  --dsw-static-neutral-bluish-875: var(--dsw-static-neutral-875);
+  --dsw-static-neutral-bluish-900: var(--dsw-static-neutral-900);
+  --dsw-static-neutral-bluish-950: var(--dsw-static-neutral-950);
+  --dsw-static-neutral-bluish-1000: var(--dsw-static-neutral-1000);
   --dsw-alias-brand-primary: var(--cl-accent);
   --dsw-alias-state-business-primary: var(--cl-accent);
   --dsw-alias-border-l2: var(--cl-blue);
@@ -1431,7 +1535,6 @@ html[data-dsh-closure-skin] [data-shortcut-modal='settings'] nav {
   padding: 10px 8px 16px;
 }
 html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='navCell'] {
-  border-radius: 0 !important;
   color: #cfc2e0 !important;
 }
 html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='navCell']:hover {
@@ -1601,453 +1704,143 @@ html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-sidebar-right-g
   }
 }
 
-/* ———— 设置内容页：早期 Windows 高饱和扫描线像素渐变 ———— */
+/* ———— 设置内容：回归宿主默认组件 ————
+   皮肤只负责：内容区背景、配色（由 body 级 --dsw-* token 继承）、字体，
+   以及开关/滑块的像素样式；卡片 / 按钮 / 输入框 / 下拉 / 标签一律跟随宿主原生。 */
 html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] {
   background: var(--cl-retro-content-surface) !important;
-  color: #eadff5 !important;
 }
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] :is(h1, h2) {
-  background: linear-gradient(90deg, #d79ad0 0%, #9c8bd8 55%, #4fb8c4 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent !important;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 0.04em;
+
+/* —— 开关（滑块）：保留像素轨道 + 方块钮 —— */
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] {
+  --cl-sw-line: rgba(200, 120, 190, 0.34);
+  --cl-sw-line-hover: rgba(255, 120, 190, 0.55);
+  --cl-sw-bg: linear-gradient(180deg, #2a1238, #120a20);
+  --cl-sw-bg-on: linear-gradient(180deg, #b83a8f, #6a3fd6);
+  --cl-sw-knob: linear-gradient(135deg, #ffffff 0%, #e6dcff 45%, #b9a5e0 100%);
+  --cl-sw-knob-on: linear-gradient(180deg, #ffd0ea 0%, #ff3ea5 100%);
+  --cl-sw-shadow: rgba(0, 0, 0, 0.34);
 }
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] :is(h3, h4) {
-  color: #e8c2dc !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] :is(p, small),
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='description'],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='hint'] {
-  color: #b9a9d6 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='card' i] {
-  border: 1px solid var(--cl-retro-card-border) !important;
-  border-top: 2px solid var(--cl-retro-card-top) !important;
-  border-radius: 0 !important;
-  background: var(--cl-retro-card-surface) !important;
-  box-shadow: var(--cl-retro-card-shadow) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] :is(input, textarea, select) {
-  border: 1px solid rgba(80, 190, 190, 0.28) !important;
-  border-radius: 0 !important;
-  background: rgba(5, 4, 15, 0.65) !important;
-  color: #eadff5 !important;
-  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.35) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] input::placeholder {
-  color: #8f81b5 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button {
-  border-radius: 0 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='tag'],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='badge'] {
-  border: 1px solid rgba(80, 200, 190, 0.25) !important;
-  border-radius: 0 !important;
-  background: rgba(8, 6, 20, 0.7) !important;
-  color: #8fd8cf !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup] {
-  border: 1px solid rgba(200, 120, 190, 0.34) !important;
-  border-radius: 0 !important;
-  background: linear-gradient(180deg, rgba(92, 42, 112, 0.58), rgba(20, 14, 40, 0.82)) !important;
-  color: #eadcf5 !important;
-  box-shadow:
-    inset 0 0 0 1px rgba(53, 224, 208, 0.1),
-    2px 2px 0 rgba(0, 0, 0, 0.3) !important;
-  padding: 6px 10px !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup] svg {
-  color: #d79ad0 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup]:hover {
-  border-color: rgba(225, 130, 200, 0.55) !important;
-  background: linear-gradient(180deg, rgba(112, 50, 132, 0.62), rgba(26, 18, 50, 0.86)) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i] {
-  border: 1px solid rgba(200, 120, 190, 0.28) !important;
-  border-radius: 0 !important;
-  background: rgba(12, 8, 26, 0.45) !important;
-  color: #d9c8e8 !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.45),
-    2px 2px 0 rgba(0, 0, 0, 0.32) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i][aria-pressed='true'] {
-  border-color: rgba(255, 120, 190, 0.55) !important;
-  background:
-    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 3px),
-    linear-gradient(180deg, rgba(190, 80, 140, 0.22), rgba(60, 54, 140, 0.16)) !important;
-  box-shadow:
-    inset 0 0 0 1px rgba(53, 224, 208, 0.22),
-    2px 2px 0 rgba(0, 0, 0, 0.38) !important;
-  color: #ffe0f0 !important;
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] {
+  --cl-sw-line: rgba(176, 24, 106, 0.24);
+  --cl-sw-line-hover: rgba(176, 24, 106, 0.42);
+  --cl-sw-bg: linear-gradient(180deg, #ffffff, #f1e7ff);
+  --cl-sw-bg-on: linear-gradient(180deg, #ffb3d8, #c3a4ff);
+  --cl-sw-knob: linear-gradient(135deg, #ffffff, #f3ecff 45%, #cbb8ef);
+  --cl-sw-knob-on: linear-gradient(180deg, #ffffff, #ff8ac8);
+  --cl-sw-shadow: rgba(80, 20, 60, 0.12);
 }
 html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] {
   position: relative !important;
-  border: 1px solid rgba(200, 120, 190, 0.5) !important;
+  width: 44px !important;
+  height: 24px !important;
+  padding: 0 !important;
+  border: 1px solid var(--cl-sw-line) !important;
   border-radius: 0 !important;
-  background: linear-gradient(180deg, #20102f, #0a0614) !important;
-  box-shadow:
-    inset 2px 2px 0 rgba(255, 255, 255, 0.08),
-    inset -2px -2px 0 rgba(0, 0, 0, 0.6),
-    2px 2px 0 rgba(0, 0, 0, 0.35) !important;
+  background: var(--cl-sw-bg) !important;
+  box-shadow: 2px 2px 0 var(--cl-sw-shadow) !important;
 }
-
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] > *:last-child:empty {
-  border: 1px solid #1a0b2a !important;
-  border-radius: 0 !important;
-  background: linear-gradient(135deg, #ffffff 0%, #e6dcff 45%, #b9a5e0 100%) !important;
-  box-shadow:
-    inset 1px 1px 0 #ffffff,
-    inset -1px -1px 0 #8b6fb0,
-    1px 1px 0 rgba(0, 0, 0, 0.5) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']::before,
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']::after {
-  border-radius: 0 !important;
-}
-
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] > *:last-child:empty,
 html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:not(:has(> *))::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #1a0b2a;
-  border-radius: 0;
-  background: linear-gradient(135deg, #ffffff 0%, #e6dcff 45%, #b9a5e0 100%);
-  box-shadow:
-    inset 1px 1px 0 #ffffff,
-    inset -1px -1px 0 #8b6fb0,
-    1px 1px 0 rgba(0, 0, 0, 0.5);
-}
-
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button:not([aria-haspopup]):not([aria-pressed]):not([role='switch']):not(:has(svg)):not([class*='primary']):not([class*='brand']):not([class*='accent']):not([class*='recharge']):not([class*='danger']) {
-  border: 1px solid rgba(200, 120, 190, 0.3) !important;
-  border-radius: 0 !important;
-  background: linear-gradient(180deg, rgba(92, 42, 112, 0.5), rgba(20, 14, 40, 0.78)) !important;
-  color: #e6d5f0 !important;
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.32) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] a {
-  border-radius: 0 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] a[class*='linkButton' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] a[class*='button' i] {
-  border: 1px solid rgba(200, 120, 190, 0.3) !important;
-  border-radius: 0 !important;
-  background: linear-gradient(180deg, rgba(92, 42, 112, 0.5), rgba(20, 14, 40, 0.78)) !important;
-  color: #e6d5f0 !important;
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.32) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] a[class*='linkButton' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] a[class*='button' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button:not([aria-haspopup]):not([aria-pressed]):not([role='switch']):not(:has(svg)) {
-  border-top: 2px solid #b74e89 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i][aria-pressed='true'],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup]:hover {
-  border-top-color: #ff8ac8 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='stepper'] {
-  border: 1px solid rgba(200, 120, 190, 0.34) !important;
-  border-top: 2px solid #b74e89 !important;
-  border-radius: 0 !important;
-  background: linear-gradient(180deg, #20102f, #0a0614) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.55),
-    2px 2px 0 rgba(0, 0, 0, 0.35) !important;
-  height: 36px !important;
-}
-/* 卡片主体按钮只负责选择，外框交给卡片本身 */
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[class*='cardMain' i] {
-  background-color: transparent !important;
+  content: '' !important;
+  position: absolute !important;
+  top: 2px !important;
+  left: 2px !important;
+  width: 18px !important;
+  height: 18px !important;
   border: 0 !important;
   border-radius: 0 !important;
-  box-shadow: none !important;
-  color: inherit !important;
+  background: var(--cl-sw-knob) !important;
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.7), inset -1px -1px 0 rgba(80, 50, 120, 0.45) !important;
+  transition: transform 120ms ease-out;
+}
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:is([aria-checked='true'], [aria-pressed='true']) {
+  background: var(--cl-sw-bg-on) !important;
+  border-color: #ff3ea5 !important;
+}
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:is([aria-checked='true'], [aria-pressed='true']) > *:last-child:empty {
+  background: var(--cl-sw-knob-on) !important;
+  transform: translateX(20px);
+}
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:not(:has(> *)):is([aria-checked='true'], [aria-pressed='true'])::after {
+  background: var(--cl-sw-knob-on) !important;
+  transform: translateX(20px);
 }
 
-/* 标签 / 代码标识 / 徽章 */
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='tag' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='badge' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='pill' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='chip' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='cardId' i] {
-  border: 1px solid rgba(80, 200, 190, 0.28) !important;
-  border-top: 1px solid rgba(255, 140, 210, 0.4) !important;
-  border-radius: 0 !important;
-  background: rgba(8, 6, 22, 0.7) !important;
-  color: #cbb8ff !important;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
-}
-
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] {
-  background: var(--cl-retro-content-surface) !important;
-  color: #2a1550 !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] :is(h1, h2) {
-  background: linear-gradient(90deg, #b0186a 0%, #5b3ac7 55%, #0b8f9a 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent !important;
-  -webkit-text-fill-color: transparent;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] :is(h3, h4) {
-  color: #7a1d5a !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] :is(p, small),
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='description'],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='hint'] {
-  color: #5a3a78 !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='card' i] {
-  border-color: var(--cl-retro-card-border) !important;
-  border-top-color: var(--cl-retro-card-top) !important;
-  background: var(--cl-retro-card-surface) !important;
-  box-shadow: var(--cl-retro-card-shadow) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] :is(input, textarea, select) {
-  border-color: rgba(176, 24, 106, 0.32) !important;
-  background: rgba(255, 255, 255, 0.88) !important;
-  color: #2a1550 !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] input::placeholder {
-  color: #8d6fa8 !important;
-}
-
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='tag'],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='badge'] {
-  border-color: rgba(11, 143, 154, 0.35) !important;
-  background: rgba(255, 255, 255, 0.7) !important;
-  color: #0b6f78 !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup] {
-  border-color: rgba(176, 24, 106, 0.28) !important;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(244, 230, 255, 0.86)) !important;
-  color: #3a205a !important;
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.65),
-    2px 2px 0 rgba(80, 20, 60, 0.12) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup] svg {
-  color: #a2297a !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i] {
-  border-color: rgba(176, 24, 106, 0.2) !important;
-  background: rgba(255, 255, 255, 0.55) !important;
-  color: #3a205a !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i][aria-pressed='true'] {
-  border-color: rgba(176, 24, 106, 0.35) !important;
-  background:
-    repeating-linear-gradient(180deg, rgba(120, 20, 90, 0.03) 0 1px, transparent 1px 3px),
-    linear-gradient(180deg, #f3d8ee, #e6d2fb) !important;
-  color: #5a1f63 !important;
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.7),
-    2px 2px 0 rgba(80, 20, 60, 0.12) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [role='switch'] {
-  border-color: rgba(176, 24, 106, 0.3) !important;
-  background: linear-gradient(180deg, #ffffff, #eadfff) !important;
-  box-shadow:
-    inset 2px 2px 0 rgba(255, 255, 255, 0.9),
-    inset -2px -2px 0 rgba(90, 40, 120, 0.35),
-    2px 2px 0 rgba(80, 20, 60, 0.12) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [role='switch'][aria-checked='true'] {
-  border-color: rgba(176, 24, 106, 0.4) !important;
-  background: linear-gradient(180deg, #ffb3d8, #c3a4ff) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [role='switch'] > *:last-child:empty,
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [role='switch']:not(:has(> *))::after {
-  border-color: rgba(90, 40, 120, 0.45) !important;
-  background: linear-gradient(135deg, #ffffff, #f3ecff 45%, #cbb8ef) !important;
-  box-shadow:
-    inset 1px 1px 0 #ffffff,
-    inset -1px -1px 0 #a98ac9,
-    1px 1px 0 rgba(80, 20, 60, 0.25) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button:not([aria-haspopup]):not([aria-pressed]):not([role='switch']):not(:has(svg)):not([class*='primary']):not([class*='brand']):not([class*='accent']):not([class*='recharge']):not([class*='danger']) {
-  border-color: rgba(176, 24, 106, 0.22) !important;
-  background: linear-gradient(180deg, #ffffff, #f6eaff) !important;
-  color: #3a205a !important;
-  box-shadow: 2px 2px 0 rgba(80, 20, 60, 0.12) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] a[class*='linkButton' i],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] a[class*='button' i] {
-  border-color: rgba(176, 24, 106, 0.22) !important;
-  background: linear-gradient(180deg, #ffffff, #f6eaff) !important;
-  color: #3a205a !important;
-  box-shadow: 2px 2px 0 rgba(80, 20, 60, 0.12) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] a[class*='linkButton' i],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] a[class*='button' i],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button:not([aria-haspopup]):not([aria-pressed]):not([role='switch']):not(:has(svg)) {
-  border-top: 2px solid #d62c84 !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i][aria-pressed='true'],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup]:hover {
-  border-top-color: #e05a9e !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='stepper'] {
-  border-color: rgba(176, 24, 106, 0.24) !important;
-  border-top-color: #d62c84 !important;
-  background: linear-gradient(180deg, #ffffff, #f0e6ff) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    inset 0 -2px 0 rgba(90, 40, 120, 0.2),
-    2px 2px 0 rgba(80, 20, 60, 0.12) !important;
-}
-
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button:not([aria-haspopup]):not([role='switch']):not([class*='themeCube' i]):not([class*='cardMain' i]):not([class*='icon' i]):not(:has(> svg:only-child)) {
-  border-color: rgba(176, 24, 106, 0.24) !important;
-  border-top-color: #d62c84 !important;
-  background: linear-gradient(180deg, #ffffff, #f6eaff) !important;
-  color: #3a205a !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    inset 0 -2px 0 rgba(90, 40, 120, 0.2),
-    2px 2px 0 rgba(80, 20, 60, 0.12) !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button:not([aria-haspopup]):not([role='switch']):not([class*='themeCube' i]):not([class*='cardMain' i]):not([class*='icon' i]):not(:has(> svg:only-child)):hover {
-  border-color: rgba(176, 24, 106, 0.4) !important;
-  border-top-color: #e05a9e !important;
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='tag' i],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='badge' i],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='pill' i],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='chip' i],
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [class*='cardId' i] {
-  border-color: rgba(11, 143, 154, 0.3) !important;
-  border-top-color: rgba(176, 24, 106, 0.3) !important;
-  background: rgba(255, 255, 255, 0.7) !important;
-  color: #0b6f78 !important;
-}
-
-/* ———— 设置页：可露希尔皮肤 ———— */
+/* 本插件自己的设置卡片：按宿主原生设置卡片的样子画，只保留开关滑块的像素样式 */
 .clsk-page {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   width: 100%;
-  padding: 2px 0 24px;
+  padding: 0 0 24px;
   box-sizing: border-box;
 }
-.clsk-head {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
+.clsk-head { display: flex; flex-direction: column; gap: 4px; }
 .clsk-heading {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
   font-weight: 600;
-  color: var(--dsw-alias-label-primary);
+  color: var(--dsw-alias-label-primary, inherit);
 }
 .clsk-sub {
   font-size: 12px;
-  line-height: 18px;
-  color: var(--dsw-alias-label-tertiary);
+  color: var(--dsw-alias-label-tertiary, inherit);
 }
 .clsk-card {
-  background: var(--dsw-alias-settings-card-fill, var(--dsw-alias-bg-layer-1));
-  border: 0.5px solid var(--dsw-alias-settings-card-stroke, var(--dsw-alias-border-l2));
-  border-radius: var(--dsw-radius-xl, 20px);
+  background: var(--dsw-alias-card-fill, var(--dsw-alias-bg-layer-1));
+  border: 1px solid var(--dsw-alias-border-l1);
+  border-radius: var(--dsw-radius-xl, 12px);
   overflow: hidden;
 }
 .clsk-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
-  padding: 14px 18px;
-  border-bottom: 0.5px solid var(--dsw-alias-border-l2);
+  gap: 16px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--dsw-alias-border-l2, rgba(255, 255, 255, 0.08));
 }
-.clsk-row:last-child {
-  border-bottom: 0;
-}
-.clsk-text {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
+.clsk-row:last-child { border-bottom: 0; }
+.clsk-text { display: flex; flex-direction: column; gap: 2px; }
 .clsk-title {
-  font-size: 14px;
-  line-height: 22px;
-  color: var(--dsw-alias-label-primary);
+  font-size: 13px;
+  color: var(--dsw-alias-label-primary, inherit);
 }
 .clsk-desc {
   font-size: 12px;
-  line-height: 18px;
-  color: var(--dsw-alias-label-tertiary);
+  color: var(--dsw-alias-label-tertiary, inherit);
 }
 .clsk-select {
   flex: 0 0 auto;
-  min-width: 180px;
-  max-width: 280px;
-  font-family: var(--cl-font);
-  font-size: 13px;
-  line-height: 20px;
-  color: #eadcf5;
-  background: linear-gradient(180deg, #20102f, #0a0614);
-  border: 1px solid rgba(200, 120, 190, 0.34);
-  border-top: 2px solid #b74e89;
-  border-radius: 0;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.55),
-    2px 2px 0 rgba(0, 0, 0, 0.35);
+  min-width: 160px;
   padding: 6px 10px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--dsw-alias-label-primary, inherit);
+  background: var(--dsw-specific-selector, var(--dsw-alias-bg-layer-2));
+  border: 1px solid var(--dsw-alias-border-l2, rgba(255, 255, 255, 0.12));
+  border-radius: 8px;
   outline: none;
 }
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) .clsk-select {
-  color: #3a205a;
-  background: linear-gradient(180deg, #ffffff, #f0e6ff);
-  border-color: rgba(176, 24, 106, 0.24);
-  border-top-color: #d62c84;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    inset 0 -2px 0 rgba(90, 40, 120, 0.2),
-    2px 2px 0 rgba(80, 20, 60, 0.12);
-}
 .clsk-select:focus-visible {
-  border-color: var(--dsw-alias-border-selected, var(--cl-violet));
-  box-shadow: 0 0 0 2px rgba(126, 14, 228, 0.25);
+  border-color: var(--dsw-alias-border-selected, var(--dsw-alias-brand-primary, #7e0ee4));
 }
-.clsk-select:disabled {
-  opacity: 0.5;
-}
+.clsk-select:disabled { opacity: 0.5; }
 .clsk-switch {
   flex: 0 0 auto;
   position: relative;
   width: 44px;
   height: 24px;
   padding: 0;
+  border: 1px solid var(--cl-sw-line, rgba(200, 120, 190, 0.34));
   border-radius: 0;
-  border: 1px solid var(--dsw-alias-border-l3);
-  background: linear-gradient(180deg, #20102f, #0a0614);
-  box-shadow:
-    inset 2px 2px 0 rgba(255, 255, 255, 0.08),
-    inset -2px -2px 0 rgba(0, 0, 0, 0.6),
-    2px 2px 0 rgba(0, 0, 0, 0.35);
+  background: var(--cl-sw-bg, #1c0d2c);
+  box-shadow: 2px 2px 0 var(--cl-sw-shadow, rgba(0, 0, 0, 0.34));
   cursor: pointer;
 }
-.clsk-switch[aria-pressed='true'] {
-  background: linear-gradient(180deg, #ff9ad0, #9a4fff);
-  border-color: rgba(255, 150, 210, 0.65);
+.clsk-switch.is-on {
+  border-color: #ff3ea5;
+  background: var(--cl-sw-bg-on, #b83a8f);
 }
 .clsk-knob {
   position: absolute;
@@ -2055,399 +1848,112 @@ html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) .clsk-select {
   left: 2px;
   width: 18px;
   height: 18px;
+  border: 0;
   border-radius: 0;
-  border: 1px solid #1a0b2a;
-  background: linear-gradient(135deg, #ffffff 0%, #e6dcff 45%, #b9a5e0 100%);
-  box-shadow:
-    inset 1px 1px 0 #ffffff,
-    inset -1px -1px 0 #8b6fb0,
-    1px 1px 0 rgba(0, 0, 0, 0.5);
-  transition: transform 0.16s ease;
+  background: var(--cl-sw-knob, #e6dcff);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.7), inset -1px -1px 0 rgba(80, 50, 120, 0.45);
+  transition: transform 120ms ease-out, background-color 120ms ease-out;
 }
-.clsk-switch[aria-pressed='true'] .clsk-knob {
+.clsk-switch.is-on .clsk-knob {
   transform: translateX(20px);
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) .clsk-switch {
-  background: linear-gradient(180deg, #ffffff, #eadfff);
-  border-color: rgba(176, 24, 106, 0.28);
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) .clsk-switch[aria-pressed='true'] {
-  background: linear-gradient(180deg, #ffb3d8, #c3a4ff);
-  border-color: rgba(176, 24, 106, 0.4);
-}
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) .clsk-knob {
-  background: linear-gradient(135deg, #ffffff, #f3ecff 45%, #cbb8ef);
-  border-color: rgba(90, 40, 120, 0.45);
+  background: var(--cl-sw-knob-on, #ffd0ea);
 }
 
-/* ———— 设置控件统一模块：同一套底色/描边/3D 阴影 ———— */
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] {
-  --cl-ctl-bg: linear-gradient(180deg, #2a1238, #120a20);
-  --cl-ctl-border: rgba(200, 120, 190, 0.32);
-  --cl-ctl-top: #b74e89;
-  --cl-ctl-text: #eadcf5;
-  --cl-ctl-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.55),
-    2px 2px 0 rgba(0, 0, 0, 0.35);
-  --cl-ctl-bg-active: linear-gradient(180deg, #3a1746, #1c0d2c);
-  --cl-ctl-border-active: #ff8ac8;
-  --cl-ctl-top-active: #ffb3d8;
-  --cl-ctl-text-active: #ffe0f0;
-  --cl-ctl-bg-on: linear-gradient(180deg, #b83a8f, #6a3fd6);
-  --cl-ctl-border-on: #ff8ac8;
-  --cl-ctl-top-on: #ffb3d8;
-  --cl-ctl-bg-hover: linear-gradient(180deg, #32183f, #160d28);
-  --cl-ctl-border-hover: rgba(255, 120, 190, 0.5);
-  --cl-ctl-top-hover: #ff8ac8;
-  --cl-ctl-text-hover: #f4e6ff;
-  --cl-ctl-shadow-active:
-    inset 0 0 0 1px rgba(255, 138, 200, 0.65),
-    inset 0 0 14px rgba(255, 120, 190, 0.18),
-    2px 2px 0 rgba(0, 0, 0, 0.4);
-  --cl-ctl-shadow-hover:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.55),
-    2px 2px 0 rgba(0, 0, 0, 0.35);
-  --cl-knob-bg: linear-gradient(135deg, #ffffff 0%, #e6dcff 45%, #b9a5e0 100%);
-  --cl-knob-border: #1a0b2a;
-  --cl-knob-shadow:
-    inset 1px 1px 0 #ffffff,
-    inset -1px -1px 0 #8b6fb0,
-    1px 1px 0 rgba(0, 0, 0, 0.5);
+/* ———— 设置页控件：圆角统一换成「小半径 + 直线硬倒角（bevel）」 ————
+   只改形状，不新增边框/底色/阴影。用逗号列表而不是 :is()，避免不同元素互相抬特异性。 */
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button,
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='button'],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] select,
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] input,
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] textarea,
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='tag' i],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='chip' i],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='badge' i],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='pill' i],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='stepper'],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='themeCube' i] {
+  border-radius: var(--dsw-radius-sm, 3px) !important;
+  corner-shape: bevel;
 }
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] {
-  --cl-ctl-bg: linear-gradient(180deg, #ffffff, #f1e7ff);
-  --cl-ctl-border: rgba(176, 24, 106, 0.24);
-  --cl-ctl-top: #d62c84;
-  --cl-ctl-text: #3a205a;
-  --cl-ctl-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    inset 0 -2px 0 rgba(90, 40, 120, 0.2),
-    2px 2px 0 rgba(80, 20, 60, 0.12);
-  --cl-ctl-bg-active: linear-gradient(180deg, #ffe3f0, #f0d9ff);
-  --cl-ctl-border-active: #c22b74;
-  --cl-ctl-top-active: #e05a9e;
-  --cl-ctl-text-active: #4a1020;
-  --cl-ctl-bg-on: linear-gradient(180deg, #ffb3d8, #c3a4ff);
-  --cl-ctl-border-on: #c22b74;
-  --cl-ctl-top-on: #e05a9e;
-  --cl-ctl-bg-hover: linear-gradient(180deg, #ffffff, #f8efff);
-  --cl-ctl-border-hover: rgba(176, 24, 106, 0.4);
-  --cl-ctl-top-hover: #e05a9e;
-  --cl-ctl-text-hover: #3a205a;
-  --cl-ctl-shadow-active:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.8),
-    inset 0 0 10px rgba(194, 43, 116, 0.12),
-    2px 2px 0 rgba(80, 20, 60, 0.14);
-  --cl-ctl-shadow-hover:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    inset 0 -2px 0 rgba(90, 40, 120, 0.2),
-    2px 2px 0 rgba(80, 20, 60, 0.12);
-  --cl-knob-bg: linear-gradient(135deg, #ffffff, #f3ecff 45%, #cbb8ef);
-  --cl-knob-border: rgba(90, 40, 120, 0.45);
-  --cl-knob-shadow:
-    inset 1px 1px 0 #ffffff,
-    inset -1px -1px 0 #a98ac9,
-    1px 1px 0 rgba(80, 20, 60, 0.25);
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='card' i],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='tile' i],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='search' i] {
+  border-radius: var(--dsw-radius-lg, 6px) !important;
+  corner-shape: bevel;
 }
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] :is(
-  button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)),
-  input,
-  select,
-  textarea,
-  [class*='stepper'],
-  [class*='tag' i],
-  [class*='badge' i],
-  [class*='pill' i],
-  [class*='chip' i],
-  [class*='cardId' i],
-  a[class*='linkButton' i],
-  a[class*='button' i]
-) {
-  border: 1px solid var(--cl-ctl-border) !important;
-  border-top: 2px solid var(--cl-ctl-top) !important;
-  border-radius: 0 !important;
-  background: var(--cl-ctl-bg) !important;
-  color: var(--cl-ctl-text) !important;
-  box-shadow: var(--cl-ctl-shadow) !important;
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch {
+  border-radius: var(--dsw-radius-xs, 2px) !important;
+  corner-shape: bevel;
 }
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] :is(
-  button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)),
-  input,
-  select,
-  textarea,
-  [class*='stepper'],
-  [class*='tag' i],
-  [class*='badge' i],
-  [class*='pill' i],
-  [class*='chip' i],
-  [class*='cardId' i],
-  a[class*='linkButton' i],
-  a[class*='button' i]
-) {
-  border-color: var(--cl-ctl-border) !important;
-  border-top-color: var(--cl-ctl-top) !important;
-  background: var(--cl-ctl-bg) !important;
-  color: var(--cl-ctl-text) !important;
-  box-shadow: var(--cl-ctl-shadow) !important;
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='navCell'] {
+  corner-shape: bevel;
 }
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] :is(
-  button[class*='themeCube' i][aria-pressed='true'],
-  button[aria-haspopup]:hover,
-  button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)):hover,
-  a[class*='linkButton' i]:hover,
-  a[class*='button' i]:hover
-) {
-  background: var(--cl-ctl-bg-active) !important;
-  border-color: var(--cl-ctl-border-active) !important;
-  border-top-color: var(--cl-ctl-top-active) !important;
-  color: var(--cl-ctl-text-active) !important;
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='actions'] button {
+  border-radius: var(--dsw-radius-sm, 3px) !important;
+  corner-shape: bevel;
 }
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] :is(
-  button[class*='themeCube' i][aria-pressed='true'],
-  button[aria-haspopup]:hover,
-  button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)):hover,
-  a[class*='linkButton' i]:hover,
-  a[class*='button' i]:hover
-) {
-  background: var(--cl-ctl-bg-active) !important;
-  border-color: var(--cl-ctl-border-active) !important;
-  border-top-color: var(--cl-ctl-top-active) !important;
-  color: var(--cl-ctl-text-active) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[class*='cardMain' i] {
-  background-color: transparent !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  color: inherit !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='cardHead' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='search' i]:not(input):not(textarea) {
-  border-radius: 0 !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] {
-  border: 1px solid var(--cl-ctl-border) !important;
-  border-top: 2px solid var(--cl-ctl-top) !important;
-  border-radius: 0 !important;
-  background: var(--cl-ctl-bg) !important;
-  box-shadow: var(--cl-ctl-shadow) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'][aria-checked='true'] {
-  background: var(--cl-ctl-bg-active) !important;
-  border-color: var(--cl-ctl-border-active) !important;
-  border-top-color: var(--cl-ctl-top-active) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] > * {
-  border-radius: 0 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] > *:last-child:empty,
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:not(:has(> *))::after {
-  border: 1px solid var(--cl-knob-border) !important;
-  border-radius: 0 !important;
-  background: var(--cl-knob-bg) !important;
-  box-shadow: var(--cl-knob-shadow) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:not(:has(> *)) {
-  width: 44px !important;
-  height: 24px !important;
-  min-width: 44px !important;
-  padding: 0 !important;
-  font-size: 0 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:not(:has(> *))::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 18px;
-  height: 18px;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:not(:has(> *))[aria-checked='true']::after {
-  left: auto;
-  right: 2px;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch:not([class*='__cl_never_extra']) {
-  width: 44px !important;
-  height: 24px !important;
-  border: 1px solid var(--cl-ctl-border) !important;
-  border-top: 2px solid var(--cl-ctl-top) !important;
-  border-radius: 0 !important;
-  background: var(--cl-ctl-bg) !important;
-  box-shadow: var(--cl-ctl-shadow) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch:not([class*='__cl_never_extra'])[aria-pressed='true'] {
-  background: var(--cl-ctl-bg-active) !important;
-  border-color: var(--cl-ctl-border-active) !important;
-  border-top-color: var(--cl-ctl-top-active) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] .clsk-knob {
-  border: 1px solid var(--cl-knob-border) !important;
-  border-radius: 0 !important;
-  background: var(--cl-knob-bg) !important;
-  box-shadow: var(--cl-knob-shadow) !important;
-}
-/* 最终按钮模块：覆盖旧规则，所有非卡片/开关按钮都用同一套 */
-html[data-dsh-closure-skin][data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)):not([class*='__cl_never_1']):not([class*='__cl_never_2']):not([class*='__cl_never_3']):not([class*='__cl_never_4']):not([class*='__cl_never_5']):not([class*='__cl_never_6']) {
-  border: 1px solid var(--cl-ctl-border) !important;
-  border-top: 2px solid var(--cl-ctl-top) !important;
-  border-radius: 0 !important;
-  background: var(--cl-ctl-bg) !important;
-  color: var(--cl-ctl-text) !important;
-  box-shadow: var(--cl-ctl-shadow) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] :is(
-  button[class*='themeCube' i][aria-pressed='true'],
-  button[aria-haspopup]:hover,
-  button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)):hover
-) {
-  background: var(--cl-ctl-bg-active) !important;
-  border-color: var(--cl-ctl-border-active) !important;
-  border-top-color: var(--cl-ctl-top-active) !important;
-  color: var(--cl-ctl-text-active) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)):not([class*='__cl_never_1']):not([class*='__cl_never_2']):not([class*='__cl_never_3']):not([class*='__cl_never_4']):not([class*='__cl_never_5']):not([class*='__cl_never_6']) {
-  border-color: var(--cl-ctl-border) !important;
-  border-top-color: var(--cl-ctl-top) !important;
-  background: var(--cl-ctl-bg) !important;
-  color: var(--cl-ctl-text) !important;
-  box-shadow: var(--cl-ctl-shadow) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] :is(
-  button[class*='themeCube' i][aria-pressed='true'],
-  button[aria-haspopup]:hover,
-  button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)):hover
-) {
-  background: var(--cl-ctl-bg-active) !important;
-  border-color: var(--cl-ctl-border-active) !important;
-  border-top-color: var(--cl-ctl-top-active) !important;
-  color: var(--cl-ctl-text-active) !important;
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='card' i] button,
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='card' i] [role='button'],
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='card' i] select,
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='card' i] input {
+  border-radius: var(--dsw-radius-xs, 2px) !important;
 }
 
-html[data-dsh-closure-skin][data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)):hover:not([class*='__cl_never_1']):not([class*='__cl_never_2']):not([class*='__cl_never_3']):not([class*='__cl_never_4']):not([class*='__cl_never_5']):not([class*='__cl_never_6']) {
-  background: var(--cl-ctl-bg-hover) !important;
-  border-color: var(--cl-ctl-border-hover) !important;
-  border-top-color: var(--cl-ctl-top-hover) !important;
-  color: var(--cl-ctl-text-hover) !important;
-  box-shadow: var(--cl-ctl-shadow-hover) !important;
+/* ———— 设置弹窗内部：给 bg-base 一个低对比兜底 ————
+   弹窗自己的底由 --cl-retro-window-surface 负责；
+   内部组件（如插件市场的搜索行包裹层）如果用 --dsw-alias-bg-base 铺底，
+   这里给一个半透明的同色系薄纱，让它和内容区背景只差一点点，
+   而不是一块近黑、直角的硬板。 */
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] {
+  /* 宿主圆角 token：整族收小，所有用 var(--dsw-radius-*) 的组件自动跟上 */
+  --dsw-radius-xs: 2px;
+  --dsw-radius-sm: 3px;
+  --dsw-radius-md: 4px;
+  --dsw-radius-lg: 6px;
+  --dsw-radius-xl: 8px;
+  --dsw-radius-panel: 10px;
+  --cl-sel-solid: #2b30b8;
+  /* 选中态导航项的圆角：交给同一族 token */
+  --cl-sel-radius: var(--dsw-radius-md, 4px);
+  --dsw-alias-bg-base: rgba(22, 24, 52, 0.6);
+  --dsw-alias-border-l2: rgba(190, 150, 255, 0.16);
+  --dsw-alias-border-l3: rgba(190, 150, 255, 0.22);
 }
-html[data-dsh-closure-skin][data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup]:hover:not([class*='__cl_never_1']):not([class*='__cl_never_2']):not([class*='__cl_never_3']):not([class*='__cl_never_4']):not([class*='__cl_never_5']):not([class*='__cl_never_6']) {
-  background: var(--cl-ctl-bg-hover) !important;
-  border-color: var(--cl-ctl-border-hover) !important;
-  border-top-color: var(--cl-ctl-top-hover) !important;
-  color: var(--cl-ctl-text-hover) !important;
-  box-shadow: var(--cl-ctl-shadow-hover) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button:not([class*='cardMain' i]):not([role='switch']):not([class*='clsk-switch']):not([class*='arrow' i]):not([class*='icon' i]):not(:has(> svg:only-child)):hover:not([class*='__cl_never_1']):not([class*='__cl_never_2']):not([class*='__cl_never_3']):not([class*='__cl_never_4']):not([class*='__cl_never_5']):not([class*='__cl_never_6']) {
-  background: var(--cl-ctl-bg-hover) !important;
-  border-color: var(--cl-ctl-border-hover) !important;
-  border-top-color: var(--cl-ctl-top-hover) !important;
-  color: var(--cl-ctl-text-hover) !important;
-  box-shadow: var(--cl-ctl-shadow-hover) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[aria-haspopup]:hover:not([class*='__cl_never_1']):not([class*='__cl_never_2']):not([class*='__cl_never_3']):not([class*='__cl_never_4']):not([class*='__cl_never_5']):not([class*='__cl_never_6']) {
-  background: var(--cl-ctl-bg-hover) !important;
-  border-color: var(--cl-ctl-border-hover) !important;
-  border-top-color: var(--cl-ctl-top-hover) !important;
-  color: var(--cl-ctl-text-hover) !important;
-  box-shadow: var(--cl-ctl-shadow-hover) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i][aria-pressed='true']:not([class*='__cl_never_1']):not([class*='__cl_never_2']):not([class*='__cl_never_3']):not([class*='__cl_never_4']):not([class*='__cl_never_5']):not([class*='__cl_never_6']):not([class*='__cl_never_7']):not([class*='__cl_never_8']):not([class*='__cl_never_9']):not([class*='__cl_never_10']) {
-  background: var(--cl-ctl-bg-active) !important;
-  border-color: var(--cl-ctl-border-active) !important;
-  border-top-color: var(--cl-ctl-top-active) !important;
-  color: var(--cl-ctl-text-active) !important;
-  box-shadow: var(--cl-ctl-shadow-active) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button[class*='themeCube' i][aria-pressed='true']:not([class*='__cl_never_1']):not([class*='__cl_never_2']):not([class*='__cl_never_3']):not([class*='__cl_never_4']):not([class*='__cl_never_5']):not([class*='__cl_never_6']):not([class*='__cl_never_7']):not([class*='__cl_never_8']):not([class*='__cl_never_9']):not([class*='__cl_never_10']) {
-  background: var(--cl-ctl-bg-active) !important;
-  border-color: var(--cl-ctl-border-active) !important;
-  border-top-color: var(--cl-ctl-top-active) !important;
-  color: var(--cl-ctl-text-active) !important;
-  box-shadow: var(--cl-ctl-shadow-active) !important;
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] {
+  --cl-sel-solid: #c3dbff;
+  --dsw-alias-bg-base: rgba(255, 255, 255, 0.5);
+  --dsw-alias-border-l2: rgba(120, 40, 110, 0.14);
+  --dsw-alias-border-l3: rgba(120, 40, 110, 0.2);
 }
 
-html[data-dsh-closure-skin][data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'][aria-checked='true'] {
-  background: var(--cl-ctl-bg-on) !important;
-  border-color: var(--cl-ctl-border-on) !important;
-  border-top-color: var(--cl-ctl-top-on) !important;
-  box-shadow: var(--cl-ctl-shadow-active) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch:not([class*='__cl_never_extra'])[aria-pressed='true'] {
-  background: var(--cl-ctl-bg-on) !important;
-  border-color: var(--cl-ctl-border-on) !important;
-  border-top-color: var(--cl-ctl-top-on) !important;
-  box-shadow: var(--cl-ctl-shadow-active) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] [role='switch'][aria-checked='true'] {
-  background: var(--cl-ctl-bg-on) !important;
-  border-color: var(--cl-ctl-border-on) !important;
-  border-top-color: var(--cl-ctl-top-on) !important;
-  box-shadow: var(--cl-ctl-shadow-active) !important;
-}
-html[data-dsh-closure-skin][data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch:not([class*='__cl_never_extra'])[aria-pressed='true'] {
-  background: var(--cl-ctl-bg-on) !important;
-  border-color: var(--cl-ctl-border-on) !important;
-  border-top-color: var(--cl-ctl-top-on) !important;
-  box-shadow: var(--cl-ctl-shadow-active) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch:not([class*='__cl_never_extra']) {
-  align-self: flex-start !important;
-  box-sizing: border-box !important;
-  margin: 2px 0 0 !important;
-  transform: none !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] {
-  align-self: flex-start !important;
-  margin-top: 2px !important;
+/* 市场搜索行的外层包裹：跟随控件的小倒角，避免直角硬块 */
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] *:has(> [class*='tabSearchRow']) {
+  border-radius: var(--dsw-radius-lg, 6px) !important;
+  corner-shape: bevel;
 }
 
-html[data-dsh-closure-skin][data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch.is-on:not([class*='__cl_never_extra']) {
-  background: var(--cl-ctl-bg-on) !important;
-  border-color: var(--cl-ctl-border-on) !important;
-  border-top-color: var(--cl-ctl-top-on) !important;
-  box-shadow: var(--cl-ctl-shadow-active) !important;
+/* ———— 主操作按钮：复用"选中"那套填充，规则只写一条 ————
+   --cl-sel-* 是皮肤里已经存在的选中语言（设置页侧边栏选中、列表选中、页签选中都用它）；
+   主按钮直接引用同一组 token，颜色/描边/投影只有一处定义。 */
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] :is(button, a):is(
+  [class*='primary' i], [class*='recharge' i]
+) {
+  border: 1px solid var(--cl-sel-edge) !important;
+  /* 选中语言是半透明渐变，叠在卡片上会显灰；垫一层同色实底，亮度对齐侧边栏选中 */
+  background-color: var(--cl-sel-solid, #2b30b8) !important;
+  background-image: var(--cl-sel-surface) !important;
+  color: var(--cl-sel-ink) !important;
+  box-shadow: var(--cl-sel-shadow) !important;
 }
-html[data-dsh-closure-skin][data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch.is-on:not([class*='__cl_never_extra']) {
-  background: var(--cl-ctl-bg-on) !important;
-  border-color: var(--cl-ctl-border-on) !important;
-  border-top-color: var(--cl-ctl-top-on) !important;
-  box-shadow: var(--cl-ctl-shadow-active) !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] img,
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] svg {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='icon' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='logo' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='glyph' i],
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [class*='avatar' i] {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] .clsk-row {
-  align-items: center !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch,
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] {
-  align-self: center !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  top: auto !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] button.clsk-switch .clsk-knob {
-  top: 0 !important;
-  margin-top: 0 !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch'] > *:last-child:empty {
-  margin-top: -2px !important;
-}
-html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='options'] [role='switch']:not(:has(> *))::after {
-  top: 0 !important;
+
+/* 设置页侧边栏选中项：与主按钮完全同一套填充（实底 + 扫描渐变 + 边 + 投影） */
+html[data-dsh-closure-skin] [data-shortcut-modal='settings'] [class*='navCell'][class*='active' i] {
+  background-color: var(--cl-sel-solid, #2b30b8) !important;
+  background-image: var(--cl-sel-surface) !important;
+  border-color: var(--cl-sel-edge) !important;
+  color: var(--cl-sel-ink) !important;
+  box-shadow: var(--cl-sel-shadow) !important;
 }
 
 /* ———— 通用浮层 / 选中行 / 导航选中：跨页面复用的像素选中语言 ————
@@ -2546,7 +2052,7 @@ html[data-dsh-closure-skin] [role='tablist'] :is(button, a)[aria-current]:not([a
 html[data-dsh-closure-skin] :is(nav, [role='navigation'], [class*='nav' i]) :is(button, a)[aria-current]:not([aria-current='false']):not([data-index]),
 html[data-dsh-closure-skin] [class*='navCell'][class*='active' i] {
   border: 1px solid var(--cl-sel-edge) !important;
-  border-radius: 0 !important;
+  border-radius: var(--cl-sel-radius, 0) !important;
   background: var(--cl-sel-surface) !important;
   box-shadow: var(--cl-sel-shadow) !important;
   color: var(--cl-sel-ink) !important;
