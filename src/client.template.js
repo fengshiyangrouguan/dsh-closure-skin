@@ -37,6 +37,20 @@ window.__ModuleLoader__.load({
     const ICON_PERM_FULL = '__ICON_PERM_FULL__'
     const ICON_REFRESH_REPLAY = '__ICON_REFRESH_REPLAY__'
     const ICON_GUIDE_HERO = '__ICON_GUIDE_HERO__'
+    const ICON_PLUGIN_GLOW = '__ICON_PLUGIN_GLOW__'
+    const ICON_BOT_GLOW = '__ICON_BOT_GLOW__'
+    const ICON_MORE_GLOW = '__ICON_MORE_GLOW__'
+    const ICON_PIN_GLOW = '__ICON_PIN_GLOW__'
+    const ICON_ARCHIVE_GLOW = '__ICON_ARCHIVE_GLOW__'
+    const ICON_REFRESH_GLOW = '__ICON_REFRESH_GLOW__'
+    const ICON_REFRESH_LIGHT_GLOW = '__ICON_REFRESH_LIGHT_GLOW__'
+    const ICON_FOLDER_CLOSED_GLOW = '__ICON_FOLDER_CLOSED_GLOW__'
+    const ICON_FOLDER_CLOSED_LIGHT_GLOW = '__ICON_FOLDER_CLOSED_LIGHT_GLOW__'
+    const ICON_FOLDER_OPEN_GLOW = '__ICON_FOLDER_OPEN_GLOW__'
+    const ICON_FOLDER_OPEN_LIGHT_GLOW = '__ICON_FOLDER_OPEN_LIGHT_GLOW__'
+    const ICON_PERM_LOCK_LIGHT = '__ICON_PERM_LOCK_LIGHT__'
+    const ICON_PERM_UNLOCK_LIGHT = '__ICON_PERM_UNLOCK_LIGHT__'
+    const ICON_PERM_FULL_LIGHT = '__ICON_PERM_FULL_LIGHT__'
 
     const CSS = `
 /* Fusion Pixel 12px（缝合像素字体）由宿主侧 /dsh-closure-skin/fonts 路由提供。
@@ -584,9 +598,8 @@ html[data-dsh-closure-skin] .cl-brand {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 0 6px rgba(126, 14, 228, 0.45));
 }
-html[data-dsh-closure-skin] .cl-brand img { display: block; height: 24px; width: auto; image-rendering: pixelated; }
+html[data-dsh-closure-skin] .cl-brand img { display: block; height: 34px; width: auto; margin: -5px 0; image-rendering: pixelated; }
 html[data-dsh-closure-skin] .cl-name {
   font-family: var(--cl-font);
   font-weight: 600;
@@ -597,10 +610,10 @@ html[data-dsh-closure-skin] .cl-name {
 }
 html[data-dsh-closure-skin] .cl-hero-logo {
   display: block;
-  height: 52px;
+  height: 74px;
+  margin: -11px 0;
   width: auto;
   image-rendering: pixelated;
-  filter: drop-shadow(0 0 10px rgba(126, 14, 228, 0.4));
   opacity: 0.95;
 }
 
@@ -610,36 +623,38 @@ html[data-dsh-closure-skin] .cl-hero-logo {
 html[data-dsh-closure-skin] [data-slot='sidebar'] [class*='panelGlyph']:has(svg[data-icon^='dsw-icon-plugin-pinwheel']),
 html[data-dsh-closure-skin] [data-slot='sidebar'] [class*='panelGlyph']:has(svg[data-icon^='dsw-icon-clock']),
 html[data-dsh-closure-skin] [data-slot='sidebar'] button[aria-haspopup='menu'] [class*='panelGlyph']:has(svg[data-icon^='dsw-icon-apps-add']) {
+  width: 28px !important;
+  height: 28px !important;
+  margin: -4px;
   background-color: var(--cl-icon);
   image-rendering: pixelated;
-  filter: drop-shadow(0 0 4px var(--cl-icon-glow));
 }
 html[data-dsh-closure-skin] [data-slot='sidebar'] [class*='panelGlyph']:has(svg[data-icon^='dsw-icon-plugin-pinwheel']) {
-  -webkit-mask-image: url('${ICON_PLUGIN}');
+  -webkit-mask-image: url('${ICON_PLUGIN_GLOW}');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
-  mask-image: url('${ICON_PLUGIN}');
+  mask-image: url('${ICON_PLUGIN_GLOW}');
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
 }
 html[data-dsh-closure-skin] [data-slot='sidebar'] [class*='panelGlyph']:has(svg[data-icon^='dsw-icon-clock']) {
-  -webkit-mask-image: url('${ICON_BOT}');
+  -webkit-mask-image: url('${ICON_BOT_GLOW}');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
-  mask-image: url('${ICON_BOT}');
+  mask-image: url('${ICON_BOT_GLOW}');
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
 }
 html[data-dsh-closure-skin] [data-slot='sidebar'] button[aria-haspopup='menu'] [class*='panelGlyph']:has(svg[data-icon^='dsw-icon-apps-add']) {
-  -webkit-mask-image: url('${ICON_MORE}');
+  -webkit-mask-image: url('${ICON_MORE_GLOW}');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
-  mask-image: url('${ICON_MORE}');
+  mask-image: url('${ICON_MORE_GLOW}');
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
@@ -652,17 +667,19 @@ html[data-dsh-closure-skin] [data-slot='sidebar'] button[aria-haspopup='menu'] [
 
 /* 所有「更多 / ...」：三菱形 */
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-ellipsis'] {
+  width: 24px !important;
+  height: 24px !important;
+  margin: -4px;
   color: transparent !important;
   background-color: var(--cl-icon);
-  -webkit-mask-image: url('${ICON_MORE}');
+  -webkit-mask-image: url('${ICON_MORE_GLOW}');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
-  mask-image: url('${ICON_MORE}');
+  mask-image: url('${ICON_MORE_GLOW}');
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
-  filter: drop-shadow(0 0 4px var(--cl-icon-glow));
   image-rendering: pixelated;
 }
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-ellipsis'] > * {
@@ -671,9 +688,11 @@ html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-ellipsis'] > * {
 
 /* 刷新：回放箭头图标（用户提供的素材），不旋转 */
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-refresh'] {
+  width: 22px !important;
+  height: 22px !important;
+  margin: -3px;
   color: transparent !important;
-  background: url('${ICON_REFRESH_REPLAY}') center / contain no-repeat;
-  filter: drop-shadow(0 0 3px rgba(225, 241, 255, 0.35));
+  background: url('${ICON_REFRESH_GLOW}') center / contain no-repeat;
   image-rendering: pixelated;
   animation: none !important;
   transform: none !important;
@@ -704,7 +723,7 @@ html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-loading'] {
 }
 /* 浅色底上淡蓝图标会糊掉，压暗一档 */
 html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) svg[data-icon^='dsw-icon-refresh'] {
-  filter: brightness(0.62) drop-shadow(0 0 2px rgba(126, 14, 228, 0.25));
+  background: url('${ICON_REFRESH_LIGHT_GLOW}') center / contain no-repeat;
 }
 /* 刷新按钮处于 ongoing 时也保持同一个静止图标：加载环只留给真正的加载图标 */
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-refresh'] {
@@ -713,7 +732,7 @@ html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-refresh'] {
   -webkit-mask-image: none !important;
   mask-image: none !important;
   background-color: transparent !important;
-  background: url('${ICON_REFRESH_REPLAY}') center / contain no-repeat !important;
+  background: url('${ICON_REFRESH_GLOW}') center / contain no-repeat !important;
 }html[data-dsh-closure-skin] svg[data-state='ongoing'] > *,
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-loading'] > * {
   opacity: 0 !important;
@@ -721,19 +740,25 @@ html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-loading'] > * {
 
 /* 文件夹：关闭 = 图6，打开 = 图7 */
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-folder-close'] {
-  background: url('${ICON_FOLDER_CLOSED}') center / contain no-repeat;
+  width: 19px !important;
+  height: 19px !important;
+  margin: -1.5px;
+  background: url('${ICON_FOLDER_CLOSED_GLOW}') center / contain no-repeat;
   image-rendering: pixelated;
 }
 /* 浅色底上白色文件夹会糊进背景：压暗 + 紫色描边 */
 html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) svg[data-icon^='dsw-icon-folder-close'] {
-  filter: brightness(0.86) drop-shadow(0 0 1.5px rgba(43, 48, 184, 0.85)) drop-shadow(0 1px 1px rgba(20, 20, 40, 0.35));
+  background: url('${ICON_FOLDER_CLOSED_LIGHT_GLOW}') center / contain no-repeat;
 }
 /* 黄色文件夹同样加描边，但不压暗 */
 html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) svg[data-icon^='dsw-icon-folder-open'] {
-  filter: drop-shadow(0 0 1.5px rgba(43, 48, 184, 0.85)) drop-shadow(0 1px 1px rgba(20, 20, 40, 0.35));
+  background: url('${ICON_FOLDER_OPEN_LIGHT_GLOW}') center / contain no-repeat;
 }
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-folder-open'] {
-  background: url('${ICON_FOLDER_OPEN}') center / contain no-repeat;
+  width: 19px !important;
+  height: 19px !important;
+  margin: -1.5px;
+  background: url('${ICON_FOLDER_OPEN_GLOW}') center / contain no-repeat;
   image-rendering: pixelated;
 }
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-folder-close'] > *,
@@ -743,17 +768,19 @@ html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-folder-open'] > * {
 
 /* 置顶：用户提供的像素箭头 */
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-pin'] {
+  width: 24px !important;
+  height: 24px !important;
+  margin: -4px;
   color: transparent !important;
   background-color: var(--cl-icon);
-  -webkit-mask-image: url('${ICON_PIN}');
+  -webkit-mask-image: url('${ICON_PIN_GLOW}');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
-  mask-image: url('${ICON_PIN}');
+  mask-image: url('${ICON_PIN_GLOW}');
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
-  filter: drop-shadow(0 0 4px var(--cl-icon-glow));
   image-rendering: pixelated;
 }
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-pin'] > * {
@@ -791,24 +818,38 @@ html[data-dsh-closure-skin] button[title*='完全权限'] [class*='triggerIcon']
   background-image: url('${ICON_PERM_FULL}');
 }
 /* 浅色底上白/淡色图标会糊掉，压暗一档 */
-html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) :is([class*='triggerIcon'], [class*='itemIcon'])[data-cl-perm] {
-  filter: brightness(0.5) saturate(1.1);
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) :is([class*='triggerIcon'], [class*='itemIcon'])[data-cl-perm='read-only'],
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) button[aria-label*='仅可查看'] [class*='triggerIcon'],
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) button[title*='仅可查看'] [class*='triggerIcon'] {
+  background-image: url('${ICON_PERM_LOCK_LIGHT}');
+}
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) :is([class*='triggerIcon'], [class*='itemIcon'])[data-cl-perm='workspace-write'],
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) button[aria-label*='工作区内修改'] [class*='triggerIcon'],
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) button[title*='工作区内修改'] [class*='triggerIcon'] {
+  background-image: url('${ICON_PERM_UNLOCK_LIGHT}');
+}
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) :is([class*='triggerIcon'], [class*='itemIcon'])[data-cl-perm='full-access'],
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) button[aria-label*='完全权限'] [class*='triggerIcon'],
+html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) button[title*='完全权限'] [class*='triggerIcon'] {
+  background-image: url('${ICON_PERM_FULL_LIGHT}');
 }
 
 /* 归档 / 取消归档：同风格像素盒 */
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-archive'],
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-unarchive'] {
+  width: 24px !important;
+  height: 24px !important;
+  margin: -4px;
   color: transparent !important;
   background-color: var(--cl-icon);
-  -webkit-mask-image: url('${ICON_ARCHIVE}');
+  -webkit-mask-image: url('${ICON_ARCHIVE_GLOW}');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: 120%;
-  mask-image: url('${ICON_ARCHIVE}');
+  mask-image: url('${ICON_ARCHIVE_GLOW}');
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 120%;
-  filter: drop-shadow(0 0 4px var(--cl-icon-glow));
   image-rendering: pixelated;
 }
 html[data-dsh-closure-skin] svg[data-icon^='dsw-icon-archive'] > *,
@@ -1165,8 +1206,11 @@ html[data-dsh-closure-skin] [data-message-bubble] {
   corner-shape: bevel;
   background: #363144 !important;
   color: #ece7f7 !important;
-  filter: drop-shadow(0 0 8px rgba(136, 112, 176, 0.2));
+  /* 原来的 drop-shadow 外发光换成 box-shadow 的第一层：
+     气泡是带圆角/切角的实心矩形，box-shadow 与 drop-shadow 的轮廓一致，
+     但不会生成额外的滤镜效果节点（每条消息少一个离屏渲染面）。 */
   box-shadow:
+    0 0 8px rgba(136, 112, 176, 0.2),
     0 0 14px rgba(136, 112, 176, 0.24),
     0 0 28px rgba(136, 112, 176, 0.12) !important;
 }
@@ -1174,6 +1218,7 @@ html[data-dsh-closure-skin] body:not([data-ds-dark-theme]) [data-message-bubble]
   background: #e9e3f4 !important;
   color: #1d1830 !important;
   box-shadow:
+    0 0 8px rgba(78, 62, 102, 0.22),
     0 0 14px rgba(78, 62, 102, 0.3),
     0 0 28px rgba(78, 62, 102, 0.14) !important;
 }

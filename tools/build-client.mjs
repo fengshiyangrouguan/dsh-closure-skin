@@ -14,7 +14,7 @@ const RAW = path.join(ROOT, 'assets-src/raw/ac_s_closur')
 
 // 占位符 → 素材文件名；先在 src/ 找（预处理过的小图），再回退到 raw 素材库
 const ASSETS = {
-  __ASSET_LOGO__: 'logo-88.png',
+  __ASSET_LOGO__: 'logo-glow.png',
   __ICON_PLUGIN__: 'plugin-cat.png',
   __ICON_BOT__: 'bot.png',
   __ICON_MORE__: 'more.png',
@@ -35,6 +35,20 @@ const ASSETS = {
   __ICON_PERM_FULL__: 'perm-full.png',
   __ICON_REFRESH_REPLAY__: 'refresh-replay.png',
   __ICON_GUIDE_HERO__: 'guide-hero.png',
+  __ICON_PLUGIN_GLOW__: 'plugin-glow.png',
+  __ICON_BOT_GLOW__: 'bot-glow.png',
+  __ICON_MORE_GLOW__: 'more-glow.png',
+  __ICON_PIN_GLOW__: 'pin-glow.png',
+  __ICON_ARCHIVE_GLOW__: 'archive-glow.png',
+  __ICON_REFRESH_GLOW__: 'refresh-glow.png',
+  __ICON_REFRESH_LIGHT_GLOW__: 'refresh-light-glow.png',
+  __ICON_FOLDER_CLOSED_GLOW__: 'folder-closed-glow.png',
+  __ICON_FOLDER_CLOSED_LIGHT_GLOW__: 'folder-closed-light-glow.png',
+  __ICON_FOLDER_OPEN_GLOW__: 'folder-open-glow.png',
+  __ICON_FOLDER_OPEN_LIGHT_GLOW__: 'folder-open-light-glow.png',
+  __ICON_PERM_LOCK_LIGHT__: 'perm-lock-light.png',
+  __ICON_PERM_UNLOCK_LIGHT__: 'perm-unlock-light.png',
+  __ICON_PERM_FULL_LIGHT__: 'perm-full-light.png',
 }
 
 function findIn(dir, name) {
